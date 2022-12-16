@@ -1,0 +1,207 @@
+:root {
+  --dark-color: #0065ff;
+  --light-color: #8bd7fd;
+  --headline-font: tomarik-display, sans-serif;
+  --paragraph-font: basic-sans, sans-serif;
+}
+
+/* Page Content */
+h1 {
+  font-family: var(--headline-font);
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.slogan-container{
+  margin-top: 50px;
+}
+
+.col-md-6 {
+  padding: 50px;
+}
+
+h2 {
+  border: 2px solid var(--dark-color);
+  border-radius: 10px;
+  padding: 50px;
+  margin: 50px 10px;
+ text-align: center;
+ line-height: 150%;
+}
+
+h2 .name-card {
+  font-family: var(--headline-font);
+}
+
+h2 .btn {
+  font-size: 25px;
+  margin-top: 30px;
+  transition: 0.05s ease-in-out;
+  color: white;
+  background-color: var(--dark-color);
+}
+
+h2 .btn:hover{
+  color: var(--dark-color);
+  background-color: var(--light-color);
+ 
+}
+
+.second-image {
+  border-radius: 10px;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.review {
+   background-color:var(--dark-color);
+   color: var(--light-color);
+  margin: 70px 200px 20px;
+  font-size: 20px;
+}
+
+
+@media only screen and (max-width: 600px){
+
+
+h2{
+  padding: 10px;
+  margin: 0px;
+  font-size: 18px;
+
+}
+
+h2 .btn {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.second-image{
+  margin-top: 10px;
+  max-width: 50%;
+border:5px solid #0065ff;
+}
+
+.review {
+  display: none;
+}
+}
+
+/* Body, Navigation & Footer */
+
+body {
+  max-width: 100%;
+  font-family: var(--paragraph-font);
+background-color: white;
+
+  color: var(--dark-color);
+}
+/* Marquee */
+.marquee-navbar {
+  background-color: yellow;
+}
+
+marquee {
+  padding: 15px 0 10px 0;
+  color: var(--dark-color);
+  margin: 0;
+}
+
+/* Navigation */
+.navbar-nav .active {
+  color : var(--dark-color);
+}
+/* Responsive: On toggle Hamburger Menu */
+.navbar-toggler{
+  background-color: white;
+  margin: 10px;
+}
+
+/* Styles overall navbar */
+nav .container-fluid{
+   background-color:var(--light-color);
+  font-size: 20px;
+padding: 10px;
+}
+/* Centers navbar list */
+.container-fluid ul {
+  margin: 0px auto;
+
+}
+.container-fluid li {
+  line-height: 45px;
+  list-style: none;
+padding: 0px 40px;
+}
+
+.container-fluid a {
+  color: white;
+  text-decoration: none;
+ transition: 0.05s ease-in-out;
+}
+
+.container-fluid a:hover {
+  color:var(--dark-color);
+}
+
+.container-fluid .name {
+  color: var(--dark-color);
+  font-family: var(--headline-font);
+  font-size: 25px;
+  transition: 0.05s ease-in-out;
+}
+
+.container-fluid .name:hover {
+  color: white;
+}
+
+.container-fluid .cart {
+  font-size: 25px;
+}
+
+
+/* Footer */
+footer .container{
+  margin: 0px auto;
+}
+footer{
+  background-color: var(--light-color);
+  background-size: cover;
+  padding: 10px 0px;
+  margin-top: 100px;
+  position: sticky;
+  margin-bottom: 0px;
+  color: white;
+}
+.foot-nav li{
+  display: inline;
+}
+/* Highlights link you are currently on */
+.active {
+  color : var(--dark-color);
+}
+/* Style the links inside the navigation bar */
+footer a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+/* Change the color of links on hover */
+footer a:hover {
+  color:var(--dark-color);
+}
+
+/* Add a color to the active/current link */
+footer a.hover {
+  background-color:var(--dark-color);
+  color: white;
+}
