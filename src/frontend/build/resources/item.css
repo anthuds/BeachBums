@@ -8,9 +8,10 @@
 /* Page Content */
 
 .products-container {
-  background-color: rgba(255, 255, 255, 0.9);
-  margin: 20px 50px;
-  padding: 5px;
+  background-image: url(../images/shortBack-01.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+    padding: 5px;
   border-radius: 15px;
 }
 
@@ -24,7 +25,7 @@ h1 {
   font-family: var(--headline-font);
   font-size: 55px;
   margin-top: 50px;
-  color: var(--dark-color);
+  color: white;
 }
 
 h2 {
@@ -32,16 +33,27 @@ h2 {
   font-size: 25px;
 }
 
-/* Search Bar */
-form {
-  text-align: center;
-  padding: 20px;
+/* Category Buttons */
+.btn {
+  font-size: 18px;
+  transition: 0.05s ease-in-out;
+  color: var(--dark-color);
+  background-color: white;
+  border: none;
+  margin: 0 20px;
+  padding:10px 50px;
 }
 
+.btn:hover{
+  color: white;
+  background-color:var(--dark-color);
+ 
+}
 /* Product Cards */
 .card {
-  background-color: rgba(139, 215, 253,.7);
+  background-color: rgba(255,255,255,.9);
   border: 3px solid var(--dark-color);
+  border-radius: 10px;
 }
 .card-title {
   font-family: var(--headline-font);

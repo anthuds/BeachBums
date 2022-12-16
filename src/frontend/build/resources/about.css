@@ -10,7 +10,6 @@
 .about-container {
 margin: 0;
 padding: 0;
- background-image: url(../images/beachh.webp);
  background-repeat: no-repeat;
  background-size: 100%;
  background-position: 90%;
@@ -43,8 +42,9 @@ header .about-paragraphs {
 
 /* Teammate Cards */
 section {
+  
   margin-bottom: 150px;
-  border:2px solid #0065ff;
+
   margin: 50px;
   border-radius: 10px;
 }
@@ -52,9 +52,9 @@ section h2 {
   font-family: var(--headline-font);
   font-size: 40px;
   color:white;
-  margin-bottom: 50px;
-  border: 2px solid var(--dark-color);
-  padding: 5px;
+  margin-bottom: 10px;
+  border: 3px solid var(--dark-color);
+  padding: 20px;
   background-color: var(--light-color);
   border-radius: 15px;
   }
@@ -66,13 +66,19 @@ section .team-cards {
 section h3 {
   padding-top: 10px;
   color:#0065ff;
+  font-family: var(--headline-font);
   font-size: 25px;
 }
 
+section p {
+  font-size: 20px;
+}
+
 section .card {
-  background-color: rgba(255,255,255,.0);
-  border: none;
-  padding: 10px 20px;
+ background-color: rgba(255,255,255,.7);
+ border: 3px solid var(--dark-color);
+ border-radius: 10px;
+padding: 20px;
 }
 
 section .card img {
@@ -123,7 +129,8 @@ header h1{
 body {
   max-width: 100%;
   font-family: var(--paragraph-font);
-  background-color: white;
+   background-image: url(https://www.myfreetextures.com/wp-content/uploads/2014/10/sand-texture-2.jpg);
+  background-size: cover;
   color: var(--dark-color);
 }
 /* Marquee */

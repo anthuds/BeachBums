@@ -1,40 +1,41 @@
 async function getItem() {
-  const name = document.getElementById("name");
-  const desc = document.getElementById("desc");
-  const image = document.getElementById("image");
-  const price = document.getElementById("price");
-
-    const listProductsDiv = document.getElementById("list-items"); //locate where to display element
-    // const card = document.createElement("div"); 
+//Grabs Where the objects from database will go 
+    const listProductsDiv = document.getElementById("list-items"); 
 
   try {
+    //GET
     const response = await fetch("http://localhost:8080/item/all");
     const responseJSON = await response.json();
 
 console.log(responseJSON)
-
+//Loops through database to display all objects
 for (let i = 0; i < responseJSON.length; i++) {
-  let myObj = responseJSON[i];
+  //Products represents the key of each object
+  let product = responseJSON[i];
+  //Creates card for each object
       let cardHTML = ` 
    
    <div class="col-sm-4 mt-3">
         <div class="card">
           <div class="card-body">
-            <a href="#"><img src="${myObj.image}" class="img-fluid" id="img-url" width="200px" alt="..."/></a>
-            <h5 class="card-title">${myObj.name}</h5>
-            <p class="card-text">${myObj.description}</p>
+            <a href="${product.image}"><img src="${product.image}" class="img-fluid" id="img-url" width="200px" alt="..."/></a>
+            <h5 class="card-title">${product.name}</h5>
+            <p class="card-text">${product.description}<br><strong>$${product.price}</strong></p>
         </div>
         </div>
         
 `;
+//Grabs where info will be stored and insert the card structure into the html 
 listProductsDiv.innerHTML += cardHTML; //upload data into innerHTML
   
 }
+//Just in case it does not work
 } catch (e) {
     console.log("oops " + e.message);
   }
 }
 
+//calls function
 getItem();
 
 

@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+      <script
+      src="https://kit.fontawesome.com/73ffcbdb91.js"
+      crossorigin="anonymous"
+    ></script>
+      <link rel="stylesheet" href="https://use.typekit.net/xvg8nmt.css" />
+    <link rel="stylesheet" href="resources/itemForm.css" />
+    <title>Item Form</title>
+  </head>
+  <body>
+   
+
+      <!-- Navigation -->
+      <nav class="navbar navbar-expand-lg m-0 p-0">
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="link">
+                <a class="active" href="index.html">Home</a>
+              </li>
+              <li class="link"><a href="about.html">About</a></li>
+              <li><a class="name" href="index.html">The Beach Bums</a></li>
+              <li class="link"><a href="items.html">Products</a></li>
+              <li class="link">
+                <a class="cart" href="#"
+                  ><i class="fa-solid fa-cart-plus"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+<!-- Content -->
+<div class="form-container">
+      <h1>Add Your Product</h1>
+
+      <div class="container">
+        <form id="form">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="Name"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              id="description"
+              placeholder="Description"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="image"
+              placeholder="Image URL"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              id="price"
+              placeholder="Price"
+            />
+          </div>
+<!-- <a class="btn" type="submit">Create New Product</a> -->
+          <button class="btn" type="submit">Create New Product</button>
+        </form>
+        <br />
+      </div>
+    </div>
+
+    <script type="module" src="js/item.js"></script>
+  </body>
 </html>

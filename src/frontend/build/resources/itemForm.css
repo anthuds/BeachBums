@@ -1,0 +1,94 @@
+:root {
+  --dark-color: #0065ff;
+  --light-color: #8bd7fd;
+  --headline-font: tomarik-display, sans-serif;
+  --paragraph-font: basic-sans, sans-serif;
+}
+
+
+
+
+.form-container{
+  max-width:500px;
+  margin: 50px auto;
+}
+
+h1{
+  color: var(--dark-color);
+  font-family: var(--headline-font);
+  text-align: center;
+
+  
+}
+
+.form-control{
+ border: 2px solid var(--dark-color);
+}
+
+input {
+  margin: 8px 0;
+}
+
+.btn {
+  font-size: 15px;
+  margin: 0 auto;
+  display: block;
+  transition: 0.05s ease-in-out;
+  color: white;
+  background-color: var(--dark-color);
+}
+
+.btn:hover{
+  color: var(--dark-color);
+  background-color: white;
+ 
+}
+
+body{
+background-image: url(../images/item-back-01.png);
+ background-repeat: no-repeat;
+ background-size: 100%;
+ font-family: var(--paragraph-font);
+}
+
+/* Styles overall navbar */
+nav .container-fluid{
+   background-color:var(--light-color);
+  font-size: 20px;
+padding: 10px;
+}
+/* Centers navbar list */
+.container-fluid ul {
+  margin: 0px auto;
+
+}
+.container-fluid li {
+  line-height: 45px;
+  list-style: none;
+padding: 0px 40px;
+}
+
+.container-fluid a {
+  color: white;
+  text-decoration: none;
+ transition: 0.05s ease-in-out;
+}
+
+.container-fluid a:hover {
+  color:var(--dark-color);
+}
+
+.container-fluid .name {
+  color: var(--dark-color);
+  font-family: var(--headline-font);
+  font-size: 25px;
+  transition: 0.05s ease-in-out;
+}
+
+.container-fluid .name:hover {
+  color: white;
+}
+
+.container-fluid .cart {
+  font-size: 25px;
+}
