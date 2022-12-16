@@ -8,15 +8,15 @@
 /* Page Content */
 
 .about-container {
-margin: 0;
-padding: 0;
- background-repeat: no-repeat;
- background-size: 100%;
- background-position: 90%;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 90%;
 }
 
 .bum-info {
-  background-color: rgba(255,255,255,.8);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 10px;
   border-radius: 10px;
 }
@@ -42,7 +42,6 @@ header .about-paragraphs {
 
 /* Teammate Cards */
 section {
-  
   margin-bottom: 150px;
 
   margin: 50px;
@@ -51,21 +50,21 @@ section {
 section h2 {
   font-family: var(--headline-font);
   font-size: 40px;
-  color:white;
+  color: white;
   margin-bottom: 10px;
   border: 3px solid var(--dark-color);
   padding: 20px;
   background-color: var(--light-color);
   border-radius: 15px;
-  }
-  
+}
+
 section .team-cards {
   padding: 20px 10px;
-   border-radius: 15px;
+  border-radius: 15px;
 }
 section h3 {
   padding-top: 10px;
-  color:#0065ff;
+  color: #0065ff;
   font-family: var(--headline-font);
   font-size: 25px;
 }
@@ -75,10 +74,10 @@ section p {
 }
 
 section .card {
- background-color: rgba(255,255,255,.7);
- border: 3px solid var(--dark-color);
- border-radius: 10px;
-padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: 3px solid var(--dark-color);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 section .card img {
@@ -88,48 +87,46 @@ section .card img {
 }
 
 @media only screen and (max-width: 600px) {
-  .about-container{
-    background-color: white;
-    background-image: none;
-  }
-
   .bum {
     max-width: 320px;
     margin: 0 auto;
-    }
+  }
 
-  header{
+  header {
     text-align: center;
   }
 
-  header h2{
+  header h2 {
     font-size: 15px;
-    }
+  }
 
-header h1{
+  header h1 {
     font-size: 30px;
     text-align: center;
   }
 
   section h2 {
     font-size: 25px;
-    
   }
 
-  section{
+  section {
     border: none;
     margin: 0 auto;
   }
 
+  section .card {
+    max-width: 300px;
+    display: block;
+    margin: 10px auto;
+  }
 }
-
 
 /* Body, Navigation & Footer */
 
 body {
   max-width: 100%;
   font-family: var(--paragraph-font);
-   background-image: url(https://www.myfreetextures.com/wp-content/uploads/2014/10/sand-texture-2.jpg);
+  background-image: url(https://www.myfreetextures.com/wp-content/uploads/2014/10/sand-texture-2.jpg);
   background-size: cover;
   color: var(--dark-color);
 }
@@ -146,39 +143,38 @@ marquee {
 
 /* Navigation */
 .navbar-nav .active {
-  color : var(--dark-color);
+  color: var(--dark-color);
 }
 /* Responsive: On toggle Hamburger Menu */
-.navbar-toggler{
+.navbar-toggler {
   background-color: white;
   margin: 10px;
 }
 
 /* Styles overall navbar */
-nav .container-fluid{
-   background-color:var(--light-color);
+nav .container-fluid {
+  background-color: var(--light-color);
   font-size: 20px;
-padding: 10px;
+  padding: 10px;
 }
 /* Centers navbar list */
 .container-fluid ul {
   margin: 0px auto;
-
 }
 .container-fluid li {
   line-height: 45px;
   list-style: none;
-padding: 0px 40px;
+  padding: 0px 40px;
 }
 
 .container-fluid a {
   color: white;
   text-decoration: none;
- transition: 0.05s ease-in-out;
+  transition: 0.05s ease-in-out;
 }
 
 .container-fluid a:hover {
-  color:var(--dark-color);
+  color: var(--dark-color);
 }
 
 .container-fluid .name {
@@ -196,12 +192,11 @@ padding: 0px 40px;
   font-size: 25px;
 }
 
-
 /* Footer */
-footer .container{
+footer .container {
   margin: 0px auto;
 }
-footer{
+footer {
   background-color: var(--light-color);
   background-size: cover;
   padding: 10px 0px;
@@ -210,12 +205,12 @@ footer{
   margin-bottom: 0px;
   color: white;
 }
-.foot-nav li{
+.foot-nav li {
   display: inline;
 }
 /* Highlights link you are currently on */
 .active {
-  color : var(--dark-color);
+  color: var(--dark-color);
 }
 /* Style the links inside the navigation bar */
 footer a {
@@ -226,15 +221,13 @@ footer a {
   font-size: 17px;
 }
 
-
-
 /* Change the color of links on hover */
 footer a:hover {
-  color:var(--dark-color);
+  color: var(--dark-color);
 }
 
 /* Add a color to the active/current link */
 footer a.hover {
-  background-color:var(--dark-color);
+  background-color: var(--dark-color);
   color: white;
 }

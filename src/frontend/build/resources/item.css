@@ -9,9 +9,9 @@
 
 .products-container {
   background-image: url(../images/shortBack-01.png);
-   background-size: cover;
-   background-repeat: no-repeat;
-    padding: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5px;
   border-radius: 15px;
 }
 
@@ -41,17 +41,16 @@ h2 {
   background-color: white;
   border: none;
   margin: 0 20px;
-  padding:10px 50px;
+  padding: 10px 50px;
 }
 
-.btn:hover{
+.btn:hover {
   color: white;
-  background-color:var(--dark-color);
- 
+  background-color: var(--dark-color);
 }
 /* Product Cards */
 .card {
-  background-color: rgba(255,255,255,.9);
+  background-color: rgba(255, 255, 255, 0.9);
   border: 3px solid var(--dark-color);
   border-radius: 10px;
 }
@@ -71,6 +70,15 @@ h2 {
 
   h2 {
     font-size: 20px;
+  }
+  .btn {
+    font-size: 18px;
+    transition: 0.05s ease-in-out;
+    color: var(--dark-color);
+    background-color: white;
+    border: none;
+    margin: 5px 20px;
+    padding: 10px 50px;
   }
 }
 
@@ -183,4 +191,3 @@ footer a.hover {
   background-color: var(--dark-color);
   color: white;
 }
-
