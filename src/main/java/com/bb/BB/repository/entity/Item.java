@@ -4,8 +4,10 @@ import com.bb.BB.controller.dto.ItemDto;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
 @Entity
+@Table(name="beach", schema = "beach")
 public class Item {
 
     @GeneratedValue

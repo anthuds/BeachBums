@@ -11,7 +11,7 @@ import java.util.Optional;
 
 
 @RestController
-@RequestMapping("/item")
+@RequestMapping("/items")
 public class ItemController {
 
     private final ItemService itemService;
