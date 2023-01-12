@@ -7,7 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="beach", schema = "beach")
+@Table(name="beach")
 public class Item {
 
     @GeneratedValue
