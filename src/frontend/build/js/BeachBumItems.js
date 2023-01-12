@@ -22,7 +22,7 @@ export default class BeachBumItems {
 export function postNewItem(name, description, image, price) {
   const data = { name, description, image, price };
 
-  fetch("http://localhost:8080/item/all", {
+  fetch("http://beachbum-project.onrender.com/item/all", {
     method: "POST", 
     headers: {
       "Content-Type": "application/json",

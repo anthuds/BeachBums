@@ -4,7 +4,7 @@ async function getItem() {
 
   try {
     //GET
-    const response = await fetch("http://localhost:8080/items/all");
+    const response = await fetch("https://beachbum-project.onrender.com/items/all");
     const responseJSON = await response.json();
 
 console.log(responseJSON)
